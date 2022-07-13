@@ -1,14 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Car Sharing</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header class="page-header">
+    <div class="container">
+<!--nagłówek z podziałem na logo nawigacje i baner z buttonami-->
+        <a href="/" class="page-logo">
+            <img src="images/Icon Logo Normal.svg" alt="Car Sharing">
+            <span class="accent">Car</span> Sharing
+        </a>
+
+        <nav class="page-nav">
+            <ul class="page-nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<section class="banner">
+    <div class="dark-overlay">
+        <div class="container">
+            <h1 class="banner-title">
+                Car sharing
+            </h1>
+            <p class="banner-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="banner-buttons">
+                <a href="#" class="btn btn-big">Share a car</a>
+                <a href="#" class="btn btn-big btn-inverted">Key features</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--treść bloga -->
+<section class="blog">
+    <div class="container">
+        <h2 class="section-title">Blog</h2>
+        <div class="blog-posts">
+            <article class="blog-post">
+                <img src="images/photo1.png" alt="" class="blog-post-img">
+                <h3 class="blog-post-title">Lorem ipsum sit dolor</h3>
+                <p class="blog-post-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="" class="btn blog-post-btn">Read more</a>
+            </article>
+            <article class="blog-post">
+                <img src="images/photo2.png" alt="" class="blog-post-img">
+                <h3 class="blog-post-title">Lorem ipsum sit dolor</h3>
+                <p class="blog-post-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="" class="btn blog-post-btn">Read more</a>
+            </article>
+            <article class="blog-post">
+                <img src="images/photo3.png" alt="" class="blog-post-img">
+                <h3 class="blog-post-title">Lorem ipsum sit dolor</h3>
+                <p class="blog-post-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="" class="btn blog-post-btn">Read more</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="service">
+    <div class="container">
+        <h2 class="section-title">Service</h2>
+        <div class="service-list">
+            <article class="service-item">
+                <img src="images/mini1.png" alt="" class="service-item-img">
+                <h3 class="service-item-title">Lorem ipsum sit dolor</h3>
+                <p class="service-item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="" class="btn service-item-btn">Read more</a>
+            </article>
+            <article class="service-item">
+                <img src="images/mini2.png" alt="" class="service-item-img">
+                <h3 class="service-item-title">Lorem ipsum sit dolor</h3>
+                <p class="service-item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="" class="btn service-item-btn">Read more</a>
+            </article>
+            <article class="service-item">
+                <img src="images/mini3.png" alt="" class="service-item-img">
+                <h3 class="service-item-title">Lorem ipsum sit dolor</h3>
+                <p class="service-item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="" class="btn service-item-btn">Read more</a>
+            </article>
+            <article class="service-item">
+                <img src="images/mini4.png" alt="" class="service-item-img">
+                <h3 class="service-item-title">Lorem ipsum sit dolor</h3>
+                <p class="service-item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="" class="btn service-item-btn">Read more</a>
+            </article>
+        </div>
+    </div>
+</section>
+<!--sekcja kontakt-->
+<section class="contact">
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-content">
+            <img src="images/Form Photo.png" alt="form_photo" />
+            <form>
+                <input type="text" name="name" id="name" placeholder="Type your name" />
+                <input type="email" name="email" id="email" placeholder="Type your email" />
+                <textarea name="message" id="message" placeholder="Type your message"></textarea>
+                <label>
+                    <input type="checkbox" name="consent" id="consent" />
+                    <span class="custom-checkbox"></span>
+                    <span class="custom-label">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</span>
+                </label>
+                <button type="submit" class="btn form-btn">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer class="page-footer">
+    <div class="container">
+        <a href="/" class="page-logo">
+            <img src="images/Icon Logo Normal.svg" alt="CarSharing">
+            <span class="accent">Car</span>&nbsp;Sharing
+        </a>
+        <div class="footer-content">
+            <nav class="footer-menu">
+                <ul class="footer-menu-list">
+                    <li><a href="#">Home Page</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Share Regulation</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-menu">
+                <ul class="footer-menu-list">
+                    <li><a href="#">Price</a></li>
+                    <li><a href="#">Our Fleet</a></li>
+                    <li><a href="#">Our Clients</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <small>Copyright © CodersLab</small>
+        </div>
+    </div>
+</footer>
+
 
 </body>
 
